@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SmallText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:color">#99FFFFFF</item>
+        <item name="fontFamily">@font/noto_sans_regular</item>
+    </style>
+
+    <style name="RegularText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:color">#FFFFFF</item>
+        <item name="fontFamily">@font/noto_sans_regular</item>
+    </style>
+
+    <style name="RegularTextPlus">
+        <item name="android:textSize">18sp</item>
+        <item name="android:color">#FFFFFF</item>
+        <item name="fontFamily">@font/noto_sans_regular</item>
+    </style>
+
+    <style name="TitleText">
+        <item name="android:textSize">22sp</item>
+        <item name="android:color">#FFFFFF</item>
+        <item name="fontFamily">@font/noto_sans_regular</item>
+    </style>
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#FFFFFF</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#FFFFFF</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5292DC"
+    tools:context=".ui.search.SearchFragment">
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/ic_back_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/searchCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/searchCard"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/searchCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:iconifiedByDefault="false"
+            android:imeOptions="actionSearch"
+            app:iconifiedByDefault="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:queryBackground="@android:color/transparent"
+            app:queryHint="Название города"
+            android:outlineSpotShadowColor="@color/white"
+            android:outlineAmbientShadowColor="@color/white"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchCard"
+        tools:listitem="@layout/search_item"
+        tools:itemCount="10"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
