@@ -15,7 +15,7 @@ Weather App
 ### Preview
 
 <p align="center">
-<img src="GIF_WEATHER_APP.gif" width="32%"/>
+<img src="GIF_WEATHER_APP_1.gif" width="32%"/>
 </p>
 <p align="left">
 <img src="IMG_WEATHER_1.jpg" width="32%"/>
